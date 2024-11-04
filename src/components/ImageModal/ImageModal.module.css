@@ -1,24 +1,23 @@
 
 .modal {
-  background-color: #fbd2d2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(215, 230, 248);
   padding: 20px;
   border-radius: 8px;
-  position: relative;
-  width: 80%;
-  max-width: 1280px;
-  max-height: 100%;
-  overflow: hidden;
+  outline: none;
+  max-width: 90%;
+  max-height: 90%;
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .content {
@@ -31,9 +30,9 @@
 
 .image {
   width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  height: 100%;
 }
+
 .description {
   margin-bottom: 20px;
 }
