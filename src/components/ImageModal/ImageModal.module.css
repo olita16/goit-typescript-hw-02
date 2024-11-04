@@ -1,0 +1,49 @@
+
+.modal {
+  background-color: #fbd2d2;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 1280px;
+  max-height: 100%;
+  overflow: hidden;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: left;
+  overflow-y: auto;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.description {
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
